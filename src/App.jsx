@@ -5,7 +5,7 @@ import CardList from './components/Cardlist';
 
 
 const App = () => {
-  const cardCount = 20; 
+  const cardCount = 10; 
   return (
     <div>
       <Navbar />
