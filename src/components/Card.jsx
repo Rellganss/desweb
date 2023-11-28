@@ -5,7 +5,7 @@ const Card = ({ index }) => {
   const [cardData, setCardData] = useState({
     title: '',
     description: '',
-    imageUrl: `https://via.placeholder.com/150?text=Card+${index}`,
+    imageUrl: `https://via.placeholder.com/300?text=Card+${index}`,
     rating: { rate: 0, count: 0 },
     price: 0,
   });
@@ -24,7 +24,7 @@ const Card = ({ index }) => {
         setCardData({
           title: product.title,
           description: product.description,
-          imageUrl: product.image || `https://via.placeholder.com/150?text=Card+${index}`,
+          imageUrl: product.image || `https://via.placeholder.com/300?text=Card+${index}`,
           rating: product.rating,
           price: product.price,
         });
