@@ -25,7 +25,7 @@ function Footer() {
             </section>
           </div>
           <p className="md:ml-auto max-w-lg text-justify">
-          "Selamat datang di situs kami, tempat yang penuh dengan kreativitas dan inspirasi! Kami adalah platform freebies yang menyediakan beragam konten gratis untuk membantu Anda memajukan proyek kreatif Anda. Mulai dari desain grafis, template, hingga sumber daya digital lainnya, kami berkomitmen untuk memfasilitasi perjalanan kreatif Anda tanpa biaya tambahan. Jelajahi koleksi kami, temukan inspirasi baru, dan tingkatkan kualitas karya Anda dengan sumber daya gratis yang kami sediakan. Bergabunglah dengan komunitas kami dan rasakan kebebasan berekspresi di dunia kreatif!"
+          "FreeDers adalah platform lowongan freelance yang menghubungkan pekerja freelance dengan proyek-proyek menarik dari berbagai bidang"
           </p>
         </div>
         <hr className="border-t my-8" />
