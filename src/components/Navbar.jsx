@@ -52,13 +52,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/tentang" className="text-white hover:text-gray-300">
-                Tentang
+              <Link to="/daftarfreelancer" className="text-white hover:text-gray-300">
+                Daftar sebagai Freelancer
               </Link>
             </li>
             <li>
-              <Link to="/layanan" className="text-white hover:text-gray-300">
-                Layanan
+              <Link to="/tentang" className="text-white hover:text-gray-300">
+                Tentang
               </Link>
             </li>
             <li>
