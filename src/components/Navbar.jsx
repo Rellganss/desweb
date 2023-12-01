@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Pastikan Anda sudah menginstal dan mengonfigurasi React Router
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4 w-full top-0 fixed">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-white font-bold text-xl">FreeDers</div>
+        <Link to="/" className="text-white font-bold text-xl">FreeDers</Link>
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -34,14 +35,14 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`md:flex md:space-x-4 ${isOpen ? 'block' : 'hidden'}`}>
-          <li><a href="/beranda" className="text-white hover:text-gray-300">Beranda</a></li>
-          <li><a href="/tentang" className="text-white hover:text-gray-300">Tentang</a></li>
-          <li><a href="/layanan" className="text-white hover:text-gray-300">Layanan</a></li>
-          <li><a href="/kontak" className="text-white hover:text-gray-300">Kontak</a></li>
+          <li><Link to="/beranda" className="text-white hover:text-gray-300">Beranda</Link></li>
+          <li><Link to="/tentang" className="text-white hover:text-gray-300">Tentang</Link></li>
+          <li><Link to="/layanan" className="text-white hover:text-gray-300">Layanan</Link></li>
+          <li><Link to="/kontak" className="text-white hover:text-gray-300">Kontak</Link></li>
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;
