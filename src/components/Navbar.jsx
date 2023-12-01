@@ -38,6 +38,7 @@ const Navbar = () => {
           <li><a href="/tentang" className="text-white hover:text-gray-300">Tentang</a></li>
           <li><a href="/layanan" className="text-white hover:text-gray-300">Layanan</a></li>
           <li><a href="/kontak" className="text-white hover:text-gray-300">Kontak</a></li>
+          <li><a href="/Login" className="text-white hover:text-gray-300">Login</a></li>
         </ul>
       </div>
     </nav>
