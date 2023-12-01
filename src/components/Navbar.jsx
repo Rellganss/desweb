@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import freedersLogo from "../assets/logo freeders.png"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4 w-full top-0 fixed">
+    <nav className="bg-gray-800 p-1 w-full top-0 fixed">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link to="/" className="text-white font-bold text-xl">
-          FreeDers
-        </Link>
+        <div className="flex items-center">
+          {/* Logo FreeDers */}
+          <img src={freedersLogo} alt="logo freeders" className="w-20 h-20 mr-2" />
+
+          {/* Tulisan FreeDers */}
+          <Link to="/" className="text-white font-bold text-xl">
+            FreeDers
+          </Link>
+        </div>
+        
         <div className="ml-20">
           {/* Kotak Pencarian dengan logo kaca lensa */}
           <div className="relative">
@@ -35,6 +43,7 @@ const Navbar = () => {
             </svg>
           </div>
         </div>
+
         <div className="hidden md:flex items-center space-x-20">
           <ul className="md:flex md:space-x-20">
             <li>
@@ -59,6 +68,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
         <div className="md:hidden">
           <button
             onClick={toggleMenu}

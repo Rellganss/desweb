@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 bg-white rounded-md shadow-md">
+    <div className="max-w-md mx-auto p-4 bg-white rounded-md shadow-md mt-8">
       <h2 className="text-2xl font-bold mb-4">Kontak dan Informasi</h2>
       <p className="text-sm text-gray-600 mb-4">
         Isi formulir di bawah untuk mengirimkan pertanyaan. Admin akan menjawab melalui email.

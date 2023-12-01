@@ -6,6 +6,7 @@ import Register from './pages/Register.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import ContactForm from './pages/ContactForm.jsx'
+import Tentang from './pages/Tentang.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/kontak",
     element: <ContactForm/>
+  },
+  {
+    path: "/tentang",
+    element: <Tentang/>
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
