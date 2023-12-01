@@ -34,11 +34,10 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`md:flex md:space-x-4 ${isOpen ? 'block' : 'hidden'}`}>
-          <li><a href="/" className="text-white hover:text-gray-300">Beranda</a></li>
+          <li><a href="/beranda" className="text-white hover:text-gray-300">Beranda</a></li>
           <li><a href="/tentang" className="text-white hover:text-gray-300">Tentang</a></li>
           <li><a href="/layanan" className="text-white hover:text-gray-300">Layanan</a></li>
           <li><a href="/kontak" className="text-white hover:text-gray-300">Kontak</a></li>
-          <li><a href="/Login" className="text-white hover:text-gray-300">Login</a></li>
         </ul>
       </div>
     </nav>
