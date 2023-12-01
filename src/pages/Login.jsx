@@ -16,7 +16,7 @@ export default function Login () {
     <section className="flex w-full h-screen">
       <div className="mx-auto w-full flex justify-center my-auto">
         <div className="mx-auto bg-white p-8 border m-10 h-80">
-          <h1 className="text-center text-4xl font-semibold mb-5">Welcome To Freebies</h1>
+          <h1 className="text-center text-4xl font-semibold mb-5">Welcome To FreeDers</h1>
           <div className="mb-4">
             <input
               className="w-full px-3 py-2 border rounded-md"
