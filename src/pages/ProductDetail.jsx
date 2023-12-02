@@ -53,8 +53,6 @@ const ProductDetail = () => {
                     <div className="description text-black mt-[20px] text-[15px]">{cardData.description}</div>
                     <div className="text-black-700 mt-[20px] text-base">Rating: {cardData.rating.rate} ({cardData.rating.count} reviews)</div>
                     <div className="price text-black mt-[20px] text-[15px]">${cardData.price}</div>
-                    <div className="price text-black mt-[20px] text-[15px]">${cardData.price}</div>
-                    <div className="price text-black mt-[20px] text-[15px]">${cardData.price}</div>
                 </div>
             </div>
 
