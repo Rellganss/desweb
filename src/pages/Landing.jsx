@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import CardList from '../components/Cardlist';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 
 export default function Landing(){
@@ -9,7 +9,7 @@ export default function Landing(){
   return (
     <div>
       <Navbar />
-      <section className='content mt-16'>
+      <section className='content mt-20'>
         <CardList cardCount={cardCount} />
       </section>
       <Footer />

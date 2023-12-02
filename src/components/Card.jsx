@@ -1,7 +1,8 @@
 // Card.js
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
-const Card = ({ index }) => {
+const Card = ({ index, showDetail }) => {
   const [cardData, setCardData] = useState({
     title: '',
     description: '',
@@ -18,7 +19,6 @@ const Card = ({ index }) => {
         const response = await fetch('https://fakestoreapi.com/products');
         const data = await response.json();
 
-        // Access the individual product using the index
         const product = data[index - 1];
 
         setCardData({
@@ -41,7 +41,8 @@ const Card = ({ index }) => {
   };
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 h-full">
+    <Link to={`/ProductDetail/${index}`} className="text-black hover:text-gray-300">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 h-[450px] cursor-pointer" >
       <img className="w-full h-64 object-cover" src={cardData.imageUrl} alt={`Card ${index}`} />
       <div className="px-4 py-2">
         <div className="font-bold text-xl mb-2">{cardData.title}</div>
@@ -58,6 +59,7 @@ const Card = ({ index }) => {
         <p className="text-gray-700 text-base">Rating: {cardData.rating.rate} ({cardData.rating.count} reviews)</p>
       </div>
     </div>
+    </Link>
   );
 };
 
