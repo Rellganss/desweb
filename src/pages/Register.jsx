@@ -10,7 +10,34 @@ export default function Register() {
   const [fullName, setFullName] = useState("");
 
   const handleSubmit = () => {
-    // Handle registration logic here
+    // Validasi input data
+    if (!username || !email || !password || !fullName) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    // Simulate registration logic
+    const newUser = {
+      username: username,
+      email: email,
+      password: password,
+      fullName: fullName,
+    };
+
+    // Check if user already exists (for simplicity, you can improve this check in a real application)
+    const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+    const isUserExists = existingUsers.some(user => user.username === newUser.username);
+
+    if (isUserExists) {
+      alert("Username already exists. Please choose a different username.");
+    } else {
+      // Save the new user to localStorage
+      existingUsers.push(newUser);
+      localStorage.setItem("users", JSON.stringify(existingUsers));
+
+      alert("Registration successful!");
+      // Handle successful registration, e.g., redirect to a dashboard page
+    }
   };
 
   return (
@@ -55,22 +82,19 @@ export default function Register() {
                 onChange={(e) => setFullName(e.target.value)}
               />
             </div>
-            <Link to="/landing">
-              <button
-                className="w-full bg-gray-900 text-white py-2 rounded-md"
-                type="submit"
-                onClick={handleSubmit}
-              >
-                Register
-              </button>
-            </Link>
-
+            <button
+              className="w-full bg-gray-900 text-white py-2 rounded-md"
+              type="button"
+              onClick={handleSubmit}
+            >
+              Register
+            </button>
             <p className="text-center mt-4">
               Already have an account?
               <Link to="/">
                 <a className="text-blue-500 ml-1">
                   Sign in
-                  </a>
+                </a>
               </Link>
             </p>
           </div>
