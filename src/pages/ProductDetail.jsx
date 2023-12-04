@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+
 const ProductDetail = () => {
     const { index } = useParams();
 
@@ -55,8 +56,6 @@ const ProductDetail = () => {
                     <div className="price text-black mt-[20px] text-[15px]">${cardData.price}</div>
                 </div>
             </div>
-
-
             <Footer/>
         </div>
     );

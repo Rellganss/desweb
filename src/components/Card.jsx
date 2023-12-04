@@ -42,7 +42,8 @@ const Card = ({ index, showDetail }) => {
 
   return (
     <Link to={`/ProductDetail/${index}`} className="text-black hover:text-gray-300">
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 h-[450px] cursor-pointer" >
+      <div className="w-full ">
+    <div className="w-[300px] rounded-[50px] overflow-hidden shadow-xl shadow-gray-700 m-[5px] mt-[15px] h-[570px] cursor-pointer " >
       <img className="w-full h-64 object-cover" src={cardData.imageUrl} alt={`Card ${index}`} />
       <div className="px-4 py-2">
         <div className="font-bold text-xl mb-2">{cardData.title}</div>
@@ -58,6 +59,7 @@ const Card = ({ index, showDetail }) => {
         <p className="text-gray-700 text-base">Price: ${cardData.price}</p>
         <p className="text-gray-700 text-base">Rating: {cardData.rating.rate} ({cardData.rating.count} reviews)</p>
       </div>
+    </div>
     </div>
     </Link>
   );

@@ -4,7 +4,7 @@ import Card from './Card';
 
 const CardList = ({ cardCount }) => {
   return (
-    <div className="flex justify-center items-center flex-wrap">
+    <div className="flex justify-around items-center flex-wrap  ">
       {[...Array(cardCount)].map((_, index) => (
         <Card key={index} index={index + 1} />
       ))}

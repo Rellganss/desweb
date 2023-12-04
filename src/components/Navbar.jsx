@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import freedersLogo from "../assets/logo freeders.png"; 
+import freedersLogo from "../assets/logo freeders.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-1 w-full top-0 fixed">
+    <nav className="bg-teal-700 p-1 w-full  top-0 fixed">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           {/* Logo FreeDers */}
@@ -68,6 +68,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
 
         <div className="md:hidden">
           <button

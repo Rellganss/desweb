@@ -9,7 +9,7 @@ export default function Landing(){
   return (
     <div>
       <Navbar />
-      <section className='content mt-20'>
+      <section className='content mt-[100px] mb-[20px]  '>
         <CardList cardCount={cardCount} />
       </section>
       <Footer />
