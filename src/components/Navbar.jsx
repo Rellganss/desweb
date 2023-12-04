@@ -47,11 +47,6 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-20">
           <ul className="md:flex md:space-x-20">
             <li>
-              <Link to="/beranda" className="text-white hover:text-gray-300">
-                Beranda
-              </Link>
-            </li>
-            <li>
               <Link to="/daftarfreelancer" className="text-white hover:text-gray-300">
                 Daftar sebagai Freelancer
               </Link>
@@ -64,6 +59,11 @@ const Navbar = () => {
             <li>
               <Link to="/kontak" className="text-white hover:text-gray-300">
                 Kontak
+              </Link>
+            </li>
+            <li>
+              <Link to="http://localhost:5173/" className="text-white hover:text-gray-300">
+                Logout
               </Link>
             </li>
           </ul>
