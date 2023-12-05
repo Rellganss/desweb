@@ -47,7 +47,7 @@ const ProductDetail = () => {
         <div>
             <NavbarBaru/>
 
-            <div className="lg:flex flex-row mt-[120px] ml-[30px] mb-[30px]sm:flex-col">
+            <div className="lg:flex lg:flex-row mt-[120px] mb-[30px] sm:flex-col sm:items-center">
                 <img className="h-auto object-cover sm:w-[300px] "  src={cardData.imageUrl} alt="" />
                 <div className="flex flex-col w-2/3 ml-[30px]">
                     <div className="title text-black mt-[120px] text-[30px]">{cardData.title}</div>
