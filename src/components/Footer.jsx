@@ -13,7 +13,7 @@ import twitter_icon from '../../public/img/twitter.png';
 function Footer() {
   return (
     <div className="footer bg-teal-700 text-gray-200 py-10 absolute-bottom w-full  ">
-      <div className="container sm:w-full md:w-full lg:w-full xl:w-full sm:mx-[20px] md:mx-[20px] lg:mx-[20px] xl:mx-[100px] xs:mx-[20px] mx-[20px]">
+      <div className="container sm:w-full md:w-full lg:w-full xl:w-full sm:mx-[20px] md:mx-[20px] lg:mx-auto xs:mx-[20px] mx-[20px]">
         <div className="top flex flex-wrap justify-between">
           <div className="item mb-6">
             <h2 className="text-lg font-semibold mb-3">Categories</h2>
@@ -33,11 +33,11 @@ function Footer() {
               </ul>
             </section>
           </div>
-          <p className="md:ml-auto mr-[50px] max-w-lg text-justify ">
+          <p className="md:ml-auto  max-w-lg text-justify ">
           "FreeDers adalah platform lowongan freelance yang menghubungkan pekerja freelance dengan proyek-proyek menarik dari berbagai bidang"
           </p>
         </div>
-        <div className="border-t my-8 mr-[50px] sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 "/></div>
+        <div className="border-t my-8  sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 "/></div>
         <div className=" w-full mx-auto">
   <div className="bottom flex flex-col md:flex-row  justify-between items-center">
     <div className="left flex items-center gap-4 ml-[20px] w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 sm:ml-[20px] md:ml-[40px] lg:ml-[60px] xl:ml-[100px]  ">

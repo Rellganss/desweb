@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import NavbarBaru from '../components/NavbarBaru';
 
 const ProductDetail = () => {
     const { index } = useParams();
@@ -45,7 +45,7 @@ const ProductDetail = () => {
     
     return (
         <div>
-            <Navbar/>
+            <NavbarBaru/>
 
             <div className="lg:flex flex-row mt-[120px] ml-[30px] mb-[30px]sm:flex-col">
                 <img className="h-auto object-cover sm:w-[300px] "  src={cardData.imageUrl} alt="" />
