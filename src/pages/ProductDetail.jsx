@@ -47,11 +47,11 @@ const ProductDetail = () => {
         <div>
             <Navbar/>
 
-            <div className="w-full  flex mt-[120px] ml-[30px] mb-[30px]">
-                <img className="w-1/3 h-auto object-cover"  src={cardData.imageUrl} alt="" />
+            <div className="lg:flex flex-row mt-[120px] ml-[30px] mb-[30px]sm:flex-col">
+                <img className="h-auto object-cover sm:w-[300px] "  src={cardData.imageUrl} alt="" />
                 <div className="flex flex-col w-2/3 ml-[30px]">
                     <div className="title text-black mt-[120px] text-[30px]">{cardData.title}</div>
-                    <div className="description text-black mt-[20px] text-[15px]">{cardData.description}</div>
+                    <div className="description text-black mt-[20px]  text-[15px] text-justify max-w-[500px]">{cardData.description}</div>
                     <div className="text-black-700 mt-[20px] text-base">Rating: {cardData.rating.rate} ({cardData.rating.count} reviews)</div>
                     <div className="price text-black mt-[20px] text-[15px]">${cardData.price}</div>
                 </div>

@@ -6,11 +6,11 @@ const TimPengembang = () => {
   const pengembangList = [
     {
       id: 1,
-      nama: "Darel Timothy Nasarani",
+      nama: "Darrell Timothy Nasarany",
       posisi: "Front-end Developer",
       deskripsi:
         "Memiliki pengalaman dalam mengembangkan antarmuka pengguna yang responsif dan menarik.",
-      foto: "link/darel.jpg",
+      foto: "https://avatars.githubusercontent.com/u/126458620?v=4",
     },
     {
       id: 2,
